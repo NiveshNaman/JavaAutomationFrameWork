@@ -72,7 +72,7 @@ public class TestCases1 {
   @AfterTest
   public void CloseBrowser()
   {
-	  driver.close();
+	  driver.quit();
 	  
   }
 }
