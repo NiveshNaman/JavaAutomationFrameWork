@@ -8,14 +8,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class SignUp {
-	public static void main(String[] args) throws InterruptedException {
-		{System.setProperty("webdriver.chrome.driver", "D:\\Eclipse\\Workspace\\BRMS_SystemFunction\\driver\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
-	    driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-		//System.out.println(driver.getPageSource());
-		driver.navigate().to("https://www.facebook.com/");
-		driver.findElement(By.xpath("//*[@id=\"pageFooter\"]/ul/li[11]/a")).click();
-		Thread.sleep(1000);
+	public static WebDriver driver;
+	public SignUp (WebDriver driver){
+		this.driver =driver;
+	}
+	public static void signup() throws InterruptedException {
 		driver.findElement(By.xpath(".//a[contains(text(),'Create New Account')]")).click();
 		Thread.sleep(1000);
 		driver.findElement(By.name("firstname")).sendKeys("qwerty");
@@ -39,4 +36,4 @@ public class SignUp {
 	}
 }
 	
-}
+
