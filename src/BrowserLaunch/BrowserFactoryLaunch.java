@@ -13,7 +13,7 @@ public class BrowserFactoryLaunch {
 		
 		if (Browser.equalsIgnoreCase("Chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "D:\\Eclipse\\Workspace\\BRMS_SystemFunction\\driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", (System.getProperty("user.dir")+"\\src\\Files\\chromedriver.exe"));
 			driver = new ChromeDriver();
 		    driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 			driver.manage().window().maximize();

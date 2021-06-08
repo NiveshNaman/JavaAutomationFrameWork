@@ -1,5 +1,6 @@
 package Test;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -19,6 +20,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import BrowserLaunch.BrowserFactoryLaunch;
 import Pages.Login;
 import Pages.SignUp;
+import Utility.getscreenshots;
 
 public class TestCases1 {
 	public WebDriver driver;
@@ -45,7 +47,7 @@ public class TestCases1 {
 	
 	
   @Test (priority = 0)
-  public void loginPage() throws InterruptedException {
+  public void loginPage() throws InterruptedException, IOException {
 	  Login l = new Login(BrowserFactoryLaunch.driver);
 	 
 	  try {
@@ -56,13 +58,15 @@ public class TestCases1 {
 	  catch (Exception e) {
 		  
 		test.log(LogStatus.FAIL, "Login Failed");
+		test.log(LogStatus.FAIL,test.addScreenCapture(getscreenshots.getScreenshot(BrowserFactoryLaunch.driver))+ "Test Case 1 Failed: Please Refer Screenshots");
+		
 			
 	}	
 	   
   }
     
   @Test (priority = 1)
-  public void signup() throws InterruptedException {
+  public void signup() throws InterruptedException, IOException {
 	SignUp s=new SignUp(BrowserFactoryLaunch.driver);
 		
 	try {
@@ -75,6 +79,7 @@ public class TestCases1 {
 		
 		
 		test.log(LogStatus.FAIL, "SignUp FAiled");
+		test.log(LogStatus.FAIL,test.addScreenCapture(getscreenshots.getScreenshot(BrowserFactoryLaunch.driver))+ "Test Case 2 Failed: Please Refer Screenshots");
 		
 	}
 	

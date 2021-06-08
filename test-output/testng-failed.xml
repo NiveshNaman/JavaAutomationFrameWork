@@ -6,8 +6,10 @@
       <class name="Test.TestCases1">
         <methods>
           <include name="CloseBrowser"/>
+          <include name="endtest"/>
           <include name="signup"/>
           <include name="BrowserLaunch"/>
+          <include name="StartTest"/>
         </methods>
       </class> <!-- Test.TestCases1 -->
     </classes>

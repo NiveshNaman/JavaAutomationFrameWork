@@ -19,7 +19,7 @@ public class SignUp {
 		Thread.sleep(1000);
 		driver.findElement(By.name("lastname")).sendKeys("qas");
 		Thread.sleep(1000);
-		driver.findElement(By.name("reg_email__")).sendKeys("8858921080");
+		driver.findElement(By.name("reg_email__12323")).sendKeys("8858921080");
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//*[@id=\"password_step_input\"]")).sendKeys("885892108000");
 		Select dropdown = new Select(driver.findElement(By.id("day")));
