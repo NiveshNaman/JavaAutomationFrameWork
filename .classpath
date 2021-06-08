@@ -40,5 +40,12 @@
 	<classpathentry kind="lib" path="D:/Eclipse/jar files/jar files/selenium-java-3.4.0/lib/xercesImpl-2.11.0.jar"/>
 	<classpathentry kind="lib" path="D:/Eclipse/jar files/jar files/selenium-java-3.4.0/lib/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Eclipse/jar files/jar_files_extent/bson-3.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/jar files/jar_files_extent/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/jar files/jar_files_extent/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/jar files/jar_files_extent/jsoup-1.8.3.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/jar files/jar_files_extent/mongodb-driver-3.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/jar files/jar_files_extent/mongodb-driver-core-3.0.4.jar"/>
+	<classpathentry kind="lib" path="D:/Eclipse/jar files/jar_files_extent/sqlite-jdbc-3.8.11.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
